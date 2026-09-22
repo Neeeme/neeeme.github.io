@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veille Technologique — Neme // Portfolio BTS SIO</title>
+  <meta name="description"
+    content="Veille technologique de Neme pour le BTS SIO SLAM : Évolution de l'Intelligence Artificielle et Failles & Sécurité sur Internet.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Unbounded:wght@400;600;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Top Navigation -->
+  <header class="topbar">
+    <div class="wrap">
+      <div class="brand">
+        <a href="index.html" class="brand-link">
+          <span class="brand-name">NEME</span>
+          <span class="brand-sub">BTS SIO SLAM</span>
+        </a>
+      </div>
+
+      <nav class="navlinks" id="navlinks">
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="skills.html">Compétences</a>
+        <a href="projects.html">Projets</a>
+        <a href="veille.html" class="active">Veille</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="topbar-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" title="Changer le thème"
+          aria-label="Basculer le mode sombre">
+          <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu mobile">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="wrap">
+      <span class="kicker">ÉPREUVE E4 // BTS SIO</span>
+      <h1 class="page-title">Veille <span class="accent">Technologique</span></h1>
+      <p class="page-desc">
+        Pour ma veille technologique, j'ai choisi deux axes complémentaires et cruciaux pour le développement logiciel :
+        <strong>« L'Évolution de l'Intelligence Artificielle »</strong> ainsi que <strong>« Les failles et vulnérabilités dans l'Internet »</strong>.
+      </p>
+
+      <!-- Quick Jump Chips -->
+      <div class="veille-nav-chips">
+        <a href="#methodologie" class="veille-chip">💡 Méthodologie</a>
+        <a href="#theme-ia" class="veille-chip">🤖 Thème 1 : Évolution de l'IA</a>
+        <a href="#theme-securite" class="veille-chip">🛡️ Thème 2 : Sécurité &amp; Failles</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="section" style="padding-top: 20px;">
+    <div class="wrap">
+
+      <!-- ==================================================================
+           SECTION MÉTHODOLOGIE
+           ================================================================== -->
+      <div id="methodologie" style="margin-bottom: 48px;">
+        <h2 style="font-size: 1.25rem; margin-bottom: 20px; color: var(--fg); display: flex; align-items: center; gap: 8px;">
+          <span>💡</span> Cadre et Méthodologie de Veille
+        </h2>
+
+        <div class="veille-grid">
+          <!-- Card 1: Definition -->
+          <div class="veille-card">
+            <h3>💡 Qu'est-ce que la veille technologique ?</h3>
+            <p>
+              La veille technologique, ou veille scientifique et technique, permet de se tenir au courant en temps réel
+              sur les technologies et avancées les plus récentes. C'est une méthode systématique de collecte, d'analyse et
+              de traitement d'informations technologiques.
+            </p>
+            <p style="margin-top: 12px;">
+              Cela peut concerner un langage, un composant, un framework, un procédé de fabrication ou l'évolution de
+              l'environnement numérique au sein d'une organisation. Aujourd'hui, maintenir une veille régulière est
+              incontournable dans les métiers de l'informatique.
+            </p>
+          </div>
+
+          <!-- Card 2: Utilité -->
+          <div class="veille-card">
+            <h3>🎯 À quoi sert-elle concrètement ?</h3>
+            <p>
+              Une démarche de veille active répond à plusieurs impératifs majeurs en BTS SIO :
+            </p>
+            <ul class="veille-sources-list" style="margin-top: 14px;">
+              <li><strong>Suivre les évolutions :</strong> Découvrir les nouveautés des écosystèmes et des outils de développement.</li>
+              <li><strong>Anticiper les besoins :</strong> Prévoir les compétences recherchées et s'adapter aux mutations du marché.</li>
+              <li><strong>Optimiser la qualité :</strong> Adopter de meilleures pratiques de conception et d'architecture.</li>
+              <li><strong>Sécurité logicielle :</strong> Être averti des vulnérabilités critiques (CVE, fuites) et des correctifs à déployer.</li>
+            </ul>
+          </div>
+
+          <!-- Card 3: Sources -->
+          <div class="veille-card">
+            <h3>📡 Mes outils &amp; Sources d'information</h3>
+            <p>
+              Pour alimenter cette veille sans surinformation, je m'appuie sur une sélection de flux fiables :
+            </p>
+            <ul class="veille-sources-list" style="margin-top: 14px;">
+              <li><strong>Presse tech spécialisée :</strong> 01net, Le Monde Informatique, Frandroid, Numerama, BBC Tech, Begeek.</li>
+              <li><strong>Plateformes de sécurité :</strong> Have I Been Pwned, CERT-FR, flux d'alertes en cybersécurité.</li>
+              <li><strong>Recherches &amp; IA :</strong> Brave Search avec IA intégrée, Grok sur X, OpenAI / ChatGPT Atlas.</li>
+              <li><strong>Communautés de développeurs :</strong> GitHub Trending, Visual Studio Code updates, forums et retours d'expérience.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ==================================================================
+           THÈME 1 : L'ÉVOLUTION DE L'INTELLIGENCE ARTIFICIELLE
+           ================================================================== -->
+      <div id="theme-ia" class="theme-card-main featured-ia">
+        <div class="theme-card-header">
+          <span class="theme-badge-pill">Premier Thème // Intelligence Artificielle</span>
+          <h2 class="theme-title">🤖 L'Évolution de l'Intelligence Artificielle</h2>
+        </div>
+
+        <!-- Sous-partie 1 -->
+        <h3 class="veille-subheading">Qu'est-ce que l'Intelligence Artificielle ?</h3>
+        <p class="veille-body-text">
+          Je ne vais pas passer par quatre chemins, mais vous avez sûrement déjà entendu parler d'intelligence artificielle,
+          que ce soit dans des films de science-fiction, dans des séries, à la télé ou sur les réseaux, car elle fait partie
+          intégrante de notre société aujourd'hui. Mais qu'est-ce que c'est ?
+        </p>
+        <p class="veille-body-text">
+          C'est tout simplement un ensemble d'algorithmes qui va permettre à une machine d'avoir le comportement typique d'un
+          humain, que ce soit dans sa façon de penser, d'apprendre, de résoudre des problèmes, sa perception ou sa prise de décision.
+          Et par ailleurs, elle ne cesse d'apprendre. Elle est en constante évolution et ne fait qu'agrandir son « cerveau »
+          de seconde en seconde. Elle s'est développée tellement rapidement, qu'elle est désormais capable de générer des vidéos,
+          des dessins, des voix, et même des programmes informatiques à partir d'une simple ligne. Il y a de quoi avoir peur, oui.
+        </p>
+
+        <!-- Callout Exemples concrets -->
+        <div class="veille-callout">
+          <div class="veille-callout-title">💡 Une omniprésence dans nos outils du quotidien</div>
+          <p class="veille-body-text" style="margin-bottom: 8px;">
+            On peut retrouver l'intelligence artificielle, dite IA, dans énormément d'endroits aujourd'hui :
+          </p>
+          <ul class="veille-sources-list" style="margin-top: 8px;">
+            <li><strong>Moteur de recherche Brave :</strong> Il suffit d'écrire une recherche pour avoir la possibilité de demander à l'IA d'effectuer cette recherche et de synthétiser les réponses.</li>
+            <li><strong>Réseaux sociaux (X / ex-Twitter) :</strong> L'IA s'intitulant <strong>Grok</strong> permet de lui parler directement, de la mentionner sous des publications et même de lui faire générer des images.</li>
+          </ul>
+          <p style="margin-top: 12px; font-weight: 600; color: var(--teal-deep); font-size: 0.92rem;">
+            En bref, on peut utiliser l'Intelligence Artificielle pour énormément de choses, et cela ne s'arrête pas.
+          </p>
+        </div>
+
+        <!-- Sous-partie 2 -->
+        <h3 class="veille-subheading">L'essor fulgurant &amp; la trajectoire de l'IA</h3>
+        <p class="veille-body-text">
+          L'Intelligence Artificielle la plus connue est celle d'OpenAI qui se nomme <strong>ChatGPT</strong>. Pour vous faire
+          comprendre à quel point celle-ci a vite évolué, elle est apparue au grand public le <strong>30 novembre 2022</strong>.
+          Elle était alors en capacité de répondre à des questions, d'avoir une conversation avec un utilisateur, et d'admettre
+          ses erreurs avec beaucoup de fautes.
+        </p>
+        <p class="veille-body-text">
+          Aujourd'hui, seulement 3 ans après, elle est en capacité d'analyser des fichiers audios/vidéos, d'en générer, de traiter
+          des documents complexes, et est même intégrée aujourd'hui officiellement dans certaines entreprises, comme par exemple
+          Microsoft avec <strong>Microsoft 365 Copilot</strong> !
+        </p>
+
+        <div class="veille-callout" style="border-left-color: var(--teal-deep);">
+          <div class="veille-callout-title">⏳ Une présence bien plus ancienne qu'on ne le pense</div>
+          <p class="veille-body-text" style="margin-bottom: 0;">
+            Mais, le saviez-vous que l'IA est présente chez nous depuis BIEN plus longtemps que cela ? Ce n'est pas parce que
+            cela fait à peu près 3 ans que ChatGPT est sorti, que l'Intelligence Artificielle est née il y a 3 ans.<br><br>
+            Vous avez forcément déjà utilisé <strong>Google Traduction</strong> ou <strong>Google Images</strong> pour trouver la référence
+            de quelque chose par exemple, ou alors vous avez déjà parlé à <strong>Siri</strong> ou <strong>Alexa</strong> via votre téléphone ?
+            Tout cela, c'est de l'IA, et effectivement, elle est présente chez nous depuis bien plus longtemps qu'on ne le pense.
+            Elle s'est popularisée depuis 3 ans, mais est déjà présente depuis plus de 15 ans.
+          </p>
+        </div>
+
+        <p class="veille-body-text">
+          Il y a à peine quelques semaines, ChatGPT a intégré des applications telles que <strong>Spotify</strong> ou <strong>Booking</strong>
+          pour nous proposer des musiques selon nos goûts ou réserver à notre place ! Et il y a quelques jours, OpenAI a sorti un
+          moteur de recherche du nom de <strong>« ChatGPT Atlas »</strong> qui ne recherche qu'à partir de l'Intelligence Artificielle en
+          proposant les « meilleurs » résultats selon lui.
+        </p>
+
+        <p style="font-size: 0.88rem; opacity: 0.8; font-style: italic; margin-top: 8px;">
+          (Tout cela n'est que l'aspect dans lequel l'utilisateur interagit avec l'IA, sans parler de son utilisation en médecine,
+          dans l'optimisation des jeux vidéo, dans le hardware et dans une multitude d'autres secteurs techniques.)
+        </p>
+
+        <!-- Articles IA -->
+        <div class="articles-section">
+          <h4 class="articles-heading">📰 Quelques articles parlant de tout cela</h4>
+          <p class="articles-intro">
+            Voici quelques articles parlant de ChatGPT et pas que, tous en rapport avec l'Intelligence Artificielle et ses progrès :
+          </p>
+
+          <div class="articles-grid">
+            <!-- Article 1 -->
+            <a href="https://www.bbc.com/afrique/articles/cm2w4g7zp2no" target="_blank" rel="noopener noreferrer" class="article-card">
+              <div class="article-header">
+                <span class="article-source">BBC Afrique</span>
+                <span class="article-icon">↗</span>
+              </div>
+              <h5 class="article-title">L'impact mondial et les enjeux de l'Intelligence Artificielle</h5>
+              <p class="article-desc">Décryptage de l'accélération des technologies d'IA et de ses répercussions économiques et sociétales à l'échelle globale.</p>
+              <div class="article-footer">
+                <span>Lire la source</span>
+                <span>bbc.com</span>
+              </div>
+            </a>
+
+            <!-- Article 2 -->
+            <a href="https://www.01net.com/actualites/apres-sora-openai-prepare-son-chatgpt-de-la-musique.html" target="_blank" rel="noopener noreferrer" class="article-card">
+              <div class="article-header">
+                <span class="article-source">01net</span>
+                <span class="article-icon">↗</span>
+              </div>
+              <h5 class="article-title">Après Sora, OpenAI prépare son ChatGPT de la musique</h5>
+              <p class="article-desc">Après la révolution vidéo de Sora, OpenAI élargit ses modèles génératifs au domaine musical et à la composition audio assistée.</p>
+              <div class="article-footer">
+                <span>Lire la source</span>
+                <span>01net.com</span>
+              </div>
+            </a>
+
+            <!-- Article 3 -->
+            <a href="https://www.lemondeinformatique.fr/actualites/lire-avec-l-ia-visual-studio-code-resout-les-conflits-de-fusion-98285.html" target="_blank" rel="noopener noreferrer" class="article-card">
+              <div class="article-header">
+                <span class="article-source">Le Monde Informatique</span>
+                <span class="article-icon">↗</span>
+              </div>
+              <h5 class="article-title">Avec l'IA, Visual Studio Code résout les conflits de fusion</h5>
+              <p class="article-desc">Intégration directe de l'IA dans l'EDI : automatisation et résolution intelligente des merge conflicts Git pour les développeurs.</p>
+              <div class="article-footer">
+                <span>Lire la source</span>
+                <span>lemondeinformatique.fr</span>
+              </div>
+            </a>
+
+            <!-- Article 4 -->
+            <a href="https://www.numerama.com/tech/2096077-en-voulant-sexualiser-chatgpt-openai-fait-du-elon-musk.html" target="_blank" rel="noopener noreferrer" class="article-card">
+              <div class="article-header">
+                <span class="article-source" style="background: rgba(231, 111, 81, 0.18); color: #c84b31;">Numerama • Santé mentale</span>
+                <span class="article-icon">↗</span>
+              </div>
+              <h5 class="article-title">En voulant sexualiser ChatGPT, OpenAI fait du Elon Musk</h5>
+              <p class="article-desc"><strong>Article clé :</strong> Analyse de l'impact psychologique, de l'attachement affectif et des dérives touchant à la santé mentale des utilisateurs face à l'IA.</p>
+              <div class="article-footer">
+                <span>Lire la source</span>
+                <span>numerama.com</span>
+              </div>
+            </a>
+
+            <!-- Article 5 -->
+            <a href="https://www.frandroid.com/culture-tech/intelligence-artificielle/openai-chatgpt/2821391_chatgpt-accueille-spotify-pour-creer-des-playlists-personnalisees" target="_blank" rel="noopener noreferrer" class="article-card">
+              <div class="article-header">
+                <span class="article-source">Frandroid</span>
+                <span class="article-icon">↗</span>
+              </div>
+              <h5 class="article-title">ChatGPT accueille Spotify pour créer des playlists personnalisées</h5>
+              <p class="article-desc">Intégration d'applications tierces au cœur de l'agent conversationnel : création de listes de lecture musicales personnalisées selon les requêtes.</p>
+              <div class="article-footer">
+                <span>Lire la source</span>
+                <span>frandroid.com</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- ==================================================================
+           THÈME 2 : LES FAILLES ET VULNÉRABILITÉS DANS L'INTERNET
+           ================================================================== -->
+      <div id="theme-securite" class="theme-card-main featured-secu">
+        <div class="theme-card-header">
+          <span class="theme-badge-pill badge-secu">Deuxième Thème // Cybersécurité</span>
+          <h2 class="theme-title">🛡️ La sécurité sur Internet &amp; Les failles de sécurité</h2>
+        </div>
+
+        <!-- Sous-partie 1 -->
+        <h3 class="veille-subheading">La sécurité sur Internet &amp; Le risque de fuite de données</h3>
+        <p class="veille-body-text">
+          La sécurité est l'une des choses primordiales sur Internet. Personne ne souhaite voir ses informations personnelles
+          divulguées. Et, même si un site est populaire et a l'air fiable/sécurisé, ce même site ne sera jamais à l'abri d'une
+          attaque et d'une potentielle fuite de données. Dès l'instant où nous renseignons nos informations personnelles sur un site
+          quelconque ou une application quelconque, nous nous exposons à une possible fuite. Et parfois, les plus grandes entreprises
+          sont celles victimes de ces mêmes fuites.
+        </p>
+        <p class="veille-body-text">
+          Mais attention, cela ne veut pas dire qu'il ne faut pas faire confiance aux entreprises et ne plus s'inscrire ou naviguer
+          sur Internet. C'est juste primordial de savoir que tout peut arriver et que rien n'est impossible à « hacker ».
+        </p>
+
+        <!-- Sous-partie 2 : Les acteurs de la sécurité -->
+        <h3 class="veille-subheading">Les acteurs de la sécurité : White Hats vs Bug Bounty Hunters</h3>
+        <p class="veille-body-text">
+          Il y a d'ailleurs des métiers qui consistent à hacker des entreprises, des sites web, des applications, mais dans un but
+          bienveillant afin de prévenir ces mêmes organisations avant que des personnes malveillantes n'en profitent :
+        </p>
+
+        <div class="roles-grid">
+          <div class="role-box">
+            <div class="role-box-title">
+              <span>🛡️</span> Les « White Hats » (Hackers Éthiques)
+            </div>
+            <p class="veille-body-text" style="font-size: 0.9rem; margin-bottom: 0;">
+              Ils effectuent des tests d'intrusion (pentricks) et des audits de sécurité de manière légale et contractuelle pour identifier
+              les brèches potentielles. Ils sont rémunérés mensuellement sous forme de salaire régulier au sein d'entreprises ou de cabinets spécialisés.
+            </p>
+          </div>
+
+          <div class="role-box">
+            <div class="role-box-title">
+              <span>🎯</span> Les « Bug Bounty Hunters »
+            </div>
+            <p class="veille-body-text" style="font-size: 0.9rem; margin-bottom: 0;">
+              Alternative très répandue : des chercheurs indépendants qui recherchent des vulnérabilités sur des périmètres ouverts par les marques.
+              Ils sont rémunérés à la prime en fonction de la faille trouvée et de son niveau de gravité (de quelques centaines à plusieurs milliers d'euros).
+            </p>
+          </div>
+        </div>
+
+        <!-- Sous-partie 3 : Les solutions -->
+        <h3 class="veille-subheading">Les différentes solutions &amp; Bonnes pratiques</h3>
+        <p class="veille-body-text">
+          Bien évidemment, il existe des solutions face à ces fuites. C'est d'ailleurs pour cela qu'il est recommandé :
+        </p>
+        <ul class="veille-sources-list">
+          <li><strong>Un mot de passe unique par service :</strong> Ne pas réutiliser le même mot de passe mais en avoir un distinct sur chaque site pour éviter qu'une fuite n'entraîne un piratage en cascade.</li>
+          <li><strong>Authentification à deux facteurs (2FA) :</strong> Fortement conseillée. Même si votre mot de passe fuite et que quelqu'un souhaite se connecter, il lui faudra un code supplémentaire éphémère que seul vous êtes censé posséder.</li>
+          <li><strong>Séparation stricte Pro / Perso :</strong> Veillez à ne pas utiliser votre adresse mail professionnelle à la place de votre adresse mail personnelle sur des réseaux sociaux ou des sites internet sans rapport avec votre profession.</li>
+        </ul>
+
+        <!-- Outil Have I Been Pwned -->
+        <div class="pwned-tool-card">
+          <div style="flex: 1; min-width: 260px;">
+            <div style="display: flex; align-items: center; gap: 8px; font-family: 'Unbounded', sans-serif; font-size: 0.95rem; font-weight: 700; color: var(--fg); margin-bottom: 6px;">
+              <span>🔍</span> Vérifiez vos comptes sur Have I Been Pwned
+            </div>
+            <p style="font-size: 0.9rem; opacity: 0.88; line-height: 1.5; margin: 0;">
+              Vous pouvez vérifier si votre adresse mail a déjà été présente dans une fuite de données à l'aide de cette plateforme de référence.
+              Elle répertorie les brèches massives comme par exemple celles de <strong>Facebook, Wattpad, X (ex-Twitter)</strong> ou encore plus récemment <strong>Discord</strong>.
+            </p>
+          </div>
+          <a href="https://www.haveibeenpwned.com/" target="_blank" rel="noopener noreferrer" class="pwned-tool-btn">
+            haveibeenpwned.com ↗
+          </a>
+        </div>
+
+        <!-- Articles Sécurité -->
+        <div class="articles-section">
+          <h4 class="articles-heading">📰 Quelques articles parlant de tout cela</h4>
+          <p class="articles-intro">
+            Voici quelques articles parlant de fuites de données, ainsi que de la sécurité au sein d'Internet :
+          </p>
+
+          <div class="articles-grid">
+            <!-- Article 1 -->
+            <a href="https://www.01net.com/actualites/cyberattaques-france-dernieres-fuites-donnees-entreprises-touchees.html" target="_blank" rel="noopener noreferrer" class="article-card secu-card">
+              <div class="article-header">
+                <span class="article-source">01net</span>
+                <span class="article-icon">↗</span>
+              </div>
+              <h5 class="article-title">Cyberattaques en France : les dernières fuites de données et entreprises touchées</h5>
+              <p class="article-desc">Bilan et récapitulatif des vagues récentes de cyberattaques ayant frappé des institutions et entreprises françaises.</p>
+              <div class="article-footer">
+                <span>Lire la source</span>
+                <span>01net.com</span>
+              </div>
+            </a>
+
+            <!-- Article 2 -->
+            <a href="https://francoischarron.com/securite/fraude-et-arnaques-web/toy-r-us-confirme-une-fuite-de-donnees-de-ses-clients/rsytexjkhp/" target="_blank" rel="noopener noreferrer" class="article-card secu-card">
+              <div class="article-header">
+                <span class="article-source">François Charron</span>
+                <span class="article-icon">↗</span>
+              </div>
+              <h5 class="article-title">Toys “R” Us confirme une fuite de données de ses clients</h5>
+              <p class="article-desc">Étude de cas : comment une chaîne grand public renommée a été touchée par une fuite de données confidentielles de clients.</p>
+              <div class="article-footer">
+                <span>Lire la source</span>
+                <span>francoischarron.com</span>
+              </div>
+            </a>
+
+            <!-- Article 3 -->
+            <a href="https://www.lesnumeriques.com/societe-numerique/discord-victime-d-une-fuite-de-donnees-etes-vous-concerne-n243615.html" target="_blank" rel="noopener noreferrer" class="article-card secu-card">
+              <div class="article-header">
+                <span class="article-source">Les Numériques</span>
+                <span class="article-icon">↗</span>
+              </div>
+              <h5 class="article-title">Discord victime d'une fuite de données : êtes-vous concerné ?</h5>
+              <p class="article-desc">Analyse de la faille de sécurité survenue via un prestataire de support tiers et son retentissement sur les millions d'utilisateurs Discord.</p>
+              <div class="article-footer">
+                <span>Lire la source</span>
+                <span>lesnumeriques.com</span>
+              </div>
+            </a>
+
+            <!-- Article 4 -->
+            <a href="https://www.begeek.fr/plus-de-180-millions-dadresses-e-mail-exposees-decouvrez-si-la-votre-fait-partie-des-victimes-423123" target="_blank" rel="noopener noreferrer" class="article-card secu-card">
+              <div class="article-header">
+                <span class="article-source">Begeek</span>
+                <span class="article-icon">↗</span>
+              </div>
+              <h5 class="article-title">Plus de 180 millions d'adresses e-mail exposées : êtes-vous victime ?</h5>
+              <p class="article-desc">Exposition massive de bases d'adresses e-mails en clair sur le dark web : comment vérifier ses informations et réagir efficacement.</p>
+              <div class="article-footer">
+                <span>Lire la source</span>
+                <span>begeek.fr</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wrap">
+      <p>© 2026-2027 <strong>Neme</strong> — Portfolio BTS SIO option SLAM. Inspiré de l'univers Hatsune Miku.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
