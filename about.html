@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos &amp; Parcours — Neme // Portfolio BTS SIO</title>
+  <meta name="description"
+    content="Présentation, parcours académique et détails du cursus BTS SIO SLAM de Neme, étudiant au CNED.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Unbounded:wght@400;600;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Top Navigation -->
+  <header class="topbar">
+    <div class="wrap">
+      <div class="brand">
+        <a href="index.html" class="brand-link">
+          <span class="brand-name">NEME</span>
+          <span class="brand-sub">BTS SIO SLAM</span>
+        </a>
+      </div>
+
+      <nav class="navlinks" id="navlinks">
+        <a href="index.html">Accueil</a>
+        <a href="about.html" class="active">À propos</a>
+        <a href="skills.html">Compétences</a>
+        <a href="projects.html">Projets</a>
+        <a href="veille.html">Veille</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="topbar-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" title="Changer le thème"
+          aria-label="Basculer le mode sombre">
+          <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu mobile">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="wrap">
+      <span class="kicker">PROFIL &amp; FORMATION</span>
+      <h1 class="page-title">À propos &amp; <span class="accent">Mon Parcours</span></h1>
+      <p class="page-desc">
+        Découvrez qui je suis, mes ambitions professionnelles dans le développement logiciel et les jeux vidéo, ainsi
+        que mon parcours au CNED.
+      </p>
+    </div>
+  </section>
+
+  <!-- About Content Section -->
+  <section class="section about">
+    <div class="wrap">
+
+      <!-- Left Column: Portrait & Quick Stats -->
+      <aside>
+        <div class="portrait-slot">
+          <img src="assets/miku_avatar.png" alt="Avatar Hatsune Miku" class="portrait-img">
+          <div class="portrait-overlay-tag">
+            <span>NEME</span>
+            <span>BTS SIO SLAM</span>
+          </div>
+        </div>
+
+        <div
+          style="margin-top: 20px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-md); padding: 20px;">
+          <h3 style="font-size: 1rem; margin-bottom: 12px; color: var(--teal);">Informations Clés</h3>
+          <ul style="list-style: none; font-size: 0.88rem; line-height: 1.8; opacity: 0.9;">
+            <li>👤 <strong>Nom :</strong> Neme</li>
+            <li>🎓 <strong>Niveau :</strong> 2ème année BTS SIO (2026-2027)</li>
+            <li>💻 <strong>Option :</strong> SLAM (Applications &amp; Logiciels)</li>
+            <li>🏫 <strong>Établissement :</strong> CNED (Distanciel)</li>
+            <li>📜 <strong>Bac :</strong> Baccalauréat Général NSI &amp; LLCER (Mention AB)</li>
+            <li>📍 <strong>Origine :</strong> Occitanie</li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Right Column: Interactive Tabs -->
+      <main>
+        <div class="tabs-nav">
+          <button class="tab-btn active" data-tab="tab-intro">À propos de moi</button>
+          <button class="tab-btn" data-tab="tab-parcours">Mon Parcours</button>
+          <button class="tab-btn" data-tab="tab-sio">C'est quoi le BTS SIO ?</button>
+        </div>
+
+        <!-- Tab 1: À propos de moi -->
+        <div class="tab-content active" id="tab-intro">
+          <h2 style="font-size: 1.4rem; margin-bottom: 16px;">Passionné par la programmation et la conception logicielle
+          </h2>
+          <p style="font-size: 0.95rem; line-height: 1.7; opacity: 0.9; margin-bottom: 16px;">
+            Bienvenue sur mon Portfolio ! Je suis un étudiant en informatique et je suis passionné par la programmation.
+            J'ai décidé de prendre l'option <strong>SLAM (Solutions Logicielles et Applications Métiers)</strong>, axée
+            sur le développement d'applications logicielles et web, car je souhaite activement évoluer dans ce domaine.
+          </p>
+          <p style="font-size: 0.95rem; line-height: 1.7; opacity: 0.9; margin-bottom: 16px;">
+            Je fais mon BTS SIO au <strong>CNED</strong> car j'ai réalisé toutes mes années de lycée au CNED en parfaite
+            autonomie ; alors pourquoi ne pas continuer sur cette voie, d'autant plus que c'est un format qui me
+            convient parfaitement et qui me permet d'approfondir mes projets personnels !
+          </p>
+          <p style="font-size: 0.95rem; line-height: 1.7; opacity: 0.9; margin-bottom: 24px;">
+            Je n'ai pas encore d'expérience professionnelle en entreprise, mais mon objectif déterminé est de devenir
+            <strong>Développeur Informatique</strong>, plus précisément dans le domaine des <em>logiciels
+              applicatifs</em> ou de la création de <em>jeux vidéo</em>.
+          </p>
+
+          <div
+            style="background: var(--paper-dim); border: 1.5px solid var(--teal); border-radius: var(--radius-md); padding: 20px; margin-top: 20px;">
+            <h4 style="font-family: 'Unbounded', sans-serif; font-size: 0.95rem; margin-bottom: 8px;">🗺️ Carte
+              Heuristique</h4>
+            <p style="font-size: 0.9rem; opacity: 0.85; margin-bottom: 14px;">
+              J'ai conçu une carte mentale interactive détaillant mon projet d'orientation, mes domaines de compétences
+              et les axes du BTS SIO.
+            </p>
+            <a href="https://atlas.mindmup.com/2025/10/d5bb1aa0b01b11f0b0ac53d546e43637/carte_heuristique_mup/index.html"
+              target="_blank" rel="noopener noreferrer" class="btn solid">
+              Consulter ma carte heuristique sur MindMup ➔
+            </a>
+          </div>
+        </div>
+
+        <!-- Tab 2: Mon Parcours -->
+        <div class="tab-content" id="tab-parcours">
+          <h2 style="font-size: 1.4rem; margin-bottom: 16px;">Chronologie de mes études</h2>
+          <p style="font-size: 0.92rem; opacity: 0.85; margin-bottom: 20px;">
+            Un aperçu des étapes clés de ma formation scolaire et de mon orientation vers le numérique.
+          </p>
+
+          <div class="timeline">
+
+            <div class="timeline-item">
+              <div class="timeline-date">09/2026 — Aujourd'hui</div>
+              <div class="timeline-desc">
+                <strong style="color: var(--teal); font-size: 1.05rem;">Deuxième année en BTS SIO (option
+                  SLAM)</strong><br>
+                <em>CNED (Centre National d'Enseignement à Distance)</em><br>
+                Apprentissage approfondi de la programmation orientée objet (C#, Java), bases de données SQL /
+                relationnelles, modélisation Merise &amp; UML, développement web et ateliers professionnels.
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">09/2025 — 06/2026</div>
+              <div class="timeline-desc">
+                <strong style="color: var(--teal); font-size: 1.05rem;">Entrée en BTS SIO (option SLAM)</strong><br>
+                <em>CNED (Centre National d'Enseignement à Distance)</em><br>
+                Apprentissage approfondi de la programmation orientée objet (C#, Java), bases de données SQL /
+                relationnelles, modélisation Merise &amp; UML, développement web et ateliers professionnels.
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">07/2025</div>
+              <div class="timeline-desc">
+                <strong style="color: var(--teal); font-size: 1.05rem;">Obtention du Baccalauréat Général (Mention Assez
+                  Bien)</strong><br>
+                <em>Académie de Montpellier — CNED</em><br>
+                Spécialités : <strong>NSI</strong> (Numérique et Sciences Informatiques : algorithmique, Python,
+                structures de données) et <strong>LLCER</strong> (Langues, Littératures et Cultures Étrangères).
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">2022 — 2025</div>
+              <div class="timeline-desc">
+                <strong style="font-size: 1rem;">Années de Lycée en enseignement à distance</strong><br>
+                <em>CNED</em><br>
+                Développement d'une forte autonomie, rigueur de travail, auto-formation aux langages de script et
+                premiers projets de programmation.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: C'est quoi le BTS SIO ? -->
+        <div class="tab-content" id="tab-sio">
+          <h2 style="font-size: 1.4rem; margin-bottom: 16px;">Présentation du BTS SIO</h2>
+          <p style="font-size: 0.95rem; line-height: 1.7; opacity: 0.9; margin-bottom: 16px;">
+            Le <strong>Brevet de Technicien Supérieur Services Informatiques aux Organisations (BTS SIO)</strong> existe
+            depuis 2011 et remplace l'ancien BTS Informatique de Gestion. Le cursus se déroule sur 2 années dans des
+            établissements français, en présentiel ou en distanciel.
+          </p>
+          <p style="font-size: 0.95rem; line-height: 1.7; opacity: 0.9; margin-bottom: 20px;">
+            Durant la première année, l'étudiant choisit entre deux options de spécialisation pour l'accompagner vers
+            son futur métier :
+          </p>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 24px;">
+            <div
+              style="background: var(--card); border: 1.5px solid var(--teal); border-radius: var(--radius-md); padding: 18px;">
+              <h3 style="font-size: 1.1rem; color: var(--teal); margin-bottom: 8px;">Option SLAM</h3>
+              <p style="font-size: 0.86rem; font-weight: 600; opacity: 0.7; margin-bottom: 8px;">Solutions Logicielles
+                et Applications Métiers (Mon option)</p>
+              <p style="font-size: 0.88rem; line-height: 1.6; opacity: 0.9;">
+                Concevoir des logiciels et applications web/mobiles, intégrer du code, assurer la maintenance
+                applicative, exploiter des bases de données et participer à la sécurisation d'applications.
+              </p>
+              <div style="margin-top: 10px; font-size: 0.82rem; color: var(--teal);">
+                <strong>Débouchés :</strong> Développeur d'applications, Analyste programmeur, Concepteur logiciel,
+                Développeur web...
+              </div>
+            </div>
+
+            <div
+              style="background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-md); padding: 18px;">
+              <h3 style="font-size: 1.1rem; margin-bottom: 8px;">Option SISR</h3>
+              <p style="font-size: 0.86rem; font-weight: 600; opacity: 0.7; margin-bottom: 8px;">Solutions
+                d'Infrastructure, Systèmes et Réseaux</p>
+              <p style="font-size: 0.88rem; line-height: 1.6; opacity: 0.9;">
+                Configurer et administrer des infrastructures informatiques et réseaux au sein d'une organisation,
+                assurer leur maintenance et supervision, et garantir la cybersécurité des systèmes.
+              </p>
+              <div style="margin-top: 10px; font-size: 0.82rem; opacity: 0.8;">
+                <strong>Débouchés :</strong> Administrateur systèmes &amp; réseaux, Technicien support, Responsable parc
+                informatique...
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <p>© 2026-2027 <strong>Neme</strong> — Portfolio BTS SIO option SLAM. Inspiré de l'univers Hatsune Miku.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
