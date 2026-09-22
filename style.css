@@ -1484,22 +1484,40 @@ section {
 }
 
 .form-feedback {
-  margin-top: 14px;
-  padding: 12px;
+  margin-top: 16px;
+  padding: 14px 18px;
   border-radius: var(--radius-sm);
-  font-size: 0.88rem;
+  font-size: 0.92rem;
+  line-height: 1.55;
   display: none;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .form-feedback.success {
   display: block;
   background: rgba(78, 250, 144, 0.18);
-  border: 1px solid #4efa90;
-  color: #1b7a42;
+  border: 1.5px solid #4efa90;
+  color: #126333;
 }
 
 :root[data-theme="dark"] .form-feedback.success {
   color: #4efa90;
+}
+
+.form-feedback.error {
+  display: block;
+  background: rgba(231, 111, 81, 0.18);
+  border: 1.5px solid #e76f51;
+  color: #c84b31;
+}
+
+:root[data-theme="dark"] .form-feedback.error {
+  color: #f4a261;
 }
 
 /* ==========================================================================

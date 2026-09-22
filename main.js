@@ -142,7 +142,7 @@ function initProjectFilters() {
 }
 
 /* ==========================================================================
-   5. FORMULAIRE DE CONTACT
+   5. FORMULAIRE DE CONTACT (FORMSPREE)
    ========================================================================== */
 function initContactForm() {
   const form = document.getElementById('contact-form');
@@ -150,22 +150,52 @@ function initContactForm() {
 
   if (!form || !feedback) return;
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const name = document.getElementById('c-name').value;
+    const nameInput = document.getElementById('c-name');
+    const name = nameInput ? nameInput.value.trim() : '';
     const submitBtn = form.querySelector('button[type="submit"]');
 
     submitBtn.disabled = true;
+    const originalText = submitBtn.textContent;
     submitBtn.textContent = 'Envoi en cours...';
 
-    setTimeout(() => {
+    feedback.className = 'form-feedback';
+    feedback.textContent = '';
+    feedback.style.display = 'none';
+
+    try {
+      const formData = new FormData(form);
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        feedback.className = 'form-feedback success';
+        feedback.style.display = 'block';
+        feedback.innerHTML = `✅ <strong>Votre message a bien été envoyé !</strong><br>Merci ${name ? name : ''}, je vous répondrai dans les plus brefs délais.`;
+        form.reset();
+      } else {
+        const result = await response.json().catch(() => null);
+        feedback.className = 'form-feedback error';
+        feedback.style.display = 'block';
+        if (result && result.errors && result.errors.length > 0) {
+          feedback.textContent = result.errors.map(err => err.message).join(', ');
+        } else {
+          feedback.textContent = "Une erreur est survenue lors de l'envoi. Veuillez vérifier vos informations et réessayer.";
+        }
+      }
+    } catch (err) {
+      feedback.className = 'form-feedback error';
+      feedback.style.display = 'block';
+      feedback.textContent = "Impossible de joindre le serveur d'envoi. Vérifiez votre connexion internet.";
+    } finally {
       submitBtn.disabled = false;
-      submitBtn.textContent = 'Envoyer le message ✉️';
-
-      feedback.className = 'form-feedback success';
-      feedback.textContent = `Merci ${name} ! Votre message a bien été envoyé. Je vous répondrai dans les plus brefs délais.`;
-
-      form.reset();
-    }, 800);
+      submitBtn.textContent = originalText;
+    }
   });
 }

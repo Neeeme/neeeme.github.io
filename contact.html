@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Me Contacter — Neme // Portfolio BTS SIO</title>
+  <meta name="description"
+    content="Contactez Neme pour toute opportunité de stage, alternance ou question relative au BTS SIO SLAM.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Unbounded:wght@400;600;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Top Navigation -->
+  <header class="topbar">
+    <div class="wrap">
+      <div class="brand">
+        <a href="index.html" class="brand-link">
+          <span class="brand-name">NEME</span>
+          <span class="brand-sub">BTS SIO SLAM</span>
+        </a>
+      </div>
+
+      <nav class="navlinks" id="navlinks">
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="skills.html">Compétences</a>
+        <a href="projects.html">Projets</a>
+        <a href="veille.html">Veille</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+
+      <div class="topbar-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" title="Changer le thème"
+          aria-label="Basculer le mode sombre">
+          <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu mobile">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="wrap">
+      <span class="kicker">ÉCHANGE &amp; COLLABORATION</span>
+      <h1 class="page-title">Me <span class="accent">Contacter</span></h1>
+      <p class="page-desc">
+        Vous pouvez m'envoyer un message si vous avez une question, une remarque sur le site, ou si vous avez une
+        opportunité de stage ou une mission pour moi !
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact-section">
+    <div class="wrap">
+      <div class="contact-layout">
+
+        <!-- Left: Contact Details & Social Links -->
+        <aside class="contact-card-info">
+          <h2 style="font-size: 1.3rem; margin-bottom: 12px; color: var(--teal);">Coordonnées &amp; Réseaux</h2>
+          <p style="font-size: 0.92rem; opacity: 0.85; line-height: 1.6; margin-bottom: 24px;">
+            Actuellement à la recherche d'un stage en développement informatique pour 2026. Je suis joignable par e-mail
+            ou via mes profils professionnels ci-dessous.
+          </p>
+
+          <div style="font-size: 0.9rem; line-height: 1.8; margin-bottom: 24px;">
+            <div>👤 <strong>Neme</strong></div>
+            <div>🎓 <strong>BTS SIO option SLAM</strong> (CNED)</div>
+            <div>📍 <strong>Occitanie, France</strong></div>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://github.com/Neeeme" target="_blank" rel="noopener noreferrer" class="social-link">
+              <span>🐙 Dépôt GitHub (@Neeeme)</span>
+              <span>➔</span>
+            </a>
+          </div>
+        </aside>
+
+        <main>
+          <form class="contact-form" id="contact-form" action="https://formspree.io/f/mwlporqj" method="POST">
+            <h2 style="font-size: 1.3rem; margin-bottom: 16px;">M'envoyer un message direct</h2>
+
+            <div class="form-group">
+              <label for="c-name" class="form-label">Votre nom complet</label>
+              <input type="text" id="c-name" name="name" class="form-input" placeholder="Ex: Jean Dupont" required>
+            </div>
+
+            <div class="form-group">
+              <label for="c-email" class="form-label">Votre adresse email</label>
+              <input type="email" id="c-email" name="email" class="form-input" placeholder="Ex: contact@entreprise.com"
+                required>
+            </div>
+
+            <div class="form-group">
+              <label for="c-subject" class="form-label">Objet de votre message</label>
+              <input type="text" id="c-subject" name="subject" class="form-input"
+                placeholder="Ex: Proposition de stage BTS SIO / Question" required>
+            </div>
+
+            <div class="form-group">
+              <label for="c-message" class="form-label">Votre message</label>
+              <textarea id="c-message" name="message" class="form-textarea"
+                placeholder="Expliquez-moi votre demande ou votre projet..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn solid" style="width: 100%;">
+              Envoyer le message ✉️
+            </button>
+
+            <div class="form-feedback" id="contact-feedback"></div>
+          </form>
+        </main>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wrap">
+      <p>© 2026-2027 <strong>Neme</strong> — Portfolio BTS SIO option SLAM. Inspiré de l'univers Hatsune Miku.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
